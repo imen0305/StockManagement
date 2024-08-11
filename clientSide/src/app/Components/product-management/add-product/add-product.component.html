@@ -1,0 +1,44 @@
+<form class="contain-form" (ngSubmit)="addProduct()" #productForm="ngForm">
+    <h2>Ajouter Produit</h2>
+    <div class="form-group row mb-3">
+      <label class="col-sm-2 col-form-label">Nom</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" [(ngModel)]="product.name" name="name" placeholder="Nom Produit" required>
+      </div>
+    </div>
+    
+    <div class="form-group row mb-3">
+      <label class="col-sm-2 col-form-label">Description</label>
+      <div class="col-sm-10">
+        <textarea class="form-control" id="exampleFormControlTextarea1" [(ngModel)]="product.description" name="description" rows="3"></textarea>
+      </div>
+    </div>
+  
+    <div class="form-group row mb-3">
+      <label class="col-sm-2 col-form-label">Quantité</label>
+      <div class="col-sm-10">
+        <input type="number" class="form-control" [(ngModel)]="product.quantity" name="quantity" placeholder="Qt Produit" required>
+      </div>
+    </div>
+  
+    <div class="form-group row mb-3">
+      <label class="col-sm-2 col-form-label">Prix</label>
+      <div class="col-sm-10">
+        <input type="number" class="form-control" [(ngModel)]="product.price" name="price" placeholder="Prix Produit" required>
+      </div>
+    </div>
+  
+    <div class="form-group row mb-3">
+      <label class="col-sm-2 col-form-label" for="exampleFormControlFile1">Image</label>
+      <div class="col-sm-10">
+      <input type="file" (change)="onFileChange($event)" class="form-control-file" id="exampleFormControlFile1">
+      </div>
+    </div>
+  
+    <div class="form-group row">
+      <div class="col-sm-10">
+        <button type="submit" class="btn btn-primary">Ajouter Produit</button>
+      </div>
+    </div>
+  </form>
+  

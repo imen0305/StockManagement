@@ -1,0 +1,26 @@
+<div
+  class="sidebar"
+  [ngClass]="{ showSidebar: isSidebarVisible, hideSidebar: !isSidebarVisible }"
+  [@fadeInOut]
+>
+  <ul>
+    <li>
+      <a routerLink="/dashboard" routerLinkActive="active">
+        <span class="menu-icon material-icons">dashboard</span>
+        <span class="menu-text">Dashboard</span>
+      </a>
+    </li>
+    <li>
+      <a routerLink="/managementProduct" routerLinkActive="active">
+        <span class="menu-icon material-icons">settings</span>
+        <span class="menu-text">Gestion des produits</span>
+      </a>
+    </li>
+    <li>
+      <a routerLink="/history" routerLinkActive="active">
+        <span class="menu-icon material-icons">schedule</span>
+        <span class="menu-text">Historique produits</span>
+      </a>
+    </li>
+  </ul>
+</div>

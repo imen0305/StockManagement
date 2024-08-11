@@ -1,0 +1,42 @@
+.pad{
+    padding-top: 10px !important;
+}
+
+::ng-deep .mdc-floating-label{
+    padding-top: 10px !important;
+}
+
+
+::ng-deep .custom-dialog-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50% !important;
+    left: 50% !important;
+    width: auto;
+  }
+
+.btn-add{
+    display: block;
+    align-content: flex-end;
+    right: 50px;
+    position: absolute;
+}
+
+.btn-add-style{
+    background-color: #0a2351 !important;
+    cursor: pointer !important;
+    mat-icon{
+        color: white !important;
+    }
+}
+
+.btn-add-style:hover {
+    background-color: #E1EBEE !important;
+    mat-icon{
+        color: #0a2351 !important;
+    }
+}
+  

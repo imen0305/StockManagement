@@ -1,0 +1,17 @@
+<mat-dialog-content>
+    Changer l'état <br/>
+    <mat-form-field>
+        <mat-select [(value)]="newState">
+          <mat-option value="Entrant">Entrant</mat-option>
+          <mat-option value="Sortant">Sortant</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+  </mat-dialog-content>
+  <mat-dialog-actions>
+    <button mat-button (click)="onCancel()">Annuler</button>
+    <button mat-button (click)="onConfirm()">Change</button>
+  </mat-dialog-actions>
+  
+
+

@@ -1,0 +1,268 @@
+.form-input {
+    padding: 5px;
+    border: none;
+    outline: none;
+    width: 400px;
+    height: 30px;
+    background-color: #e4e4e4;
+    color: #2e2e38;
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+  
+  .yellow {
+    color: yellow;
+    --mdc-circular-progress-active-indicator-color: yellow;
+  }
+  
+  .button-style {
+    width: 400px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 0% !important;
+    background-color: #13274F;
+    color: #F0F8FF;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: ease 0.2s;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 29px;
+    /* identical to box height */
+    text-align: center;
+  }
+  
+  .button-style:hover {
+    color: #13274F;
+    background-color: #F0F8FF;
+    font-size: 1.4rem;
+  }
+  
+  /* */
+  .img-container-layout {
+    background-color: #333333 !important;
+  }
+  
+  .img-style {
+    width: 100%;
+    height: 115% !important;
+  }
+  
+  .img-container-layout {
+    display: flex;
+    align-items: center;
+    /* center vertically */
+    justify-content: center;
+    /* center horizontally */
+  }
+  
+  .bg-image-vertical {
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: auto 100%;
+  }
+  
+  .custom-style {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media (min-width: 1025px) {
+    .h-custom-2 {
+      height: 100%;
+    }
+  }
+  
+  .container-fluid {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: hidden !important;
+    padding: 0 !important;
+  }
+  
+  .row {
+    width: 100%;
+    height: 100% !important;
+  }
+  .img-container-layout {
+    height: 98% !important;
+  }
+  
+  .col-md-6 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .img-container-layout {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .img-wrapper {
+    display: flex;
+  }
+  
+  .check-style {
+    border: 1px solid #000000;
+    border-radius: 0 !important;
+    cursor: pointer;
+  }
+  
+  .check-style:checked {
+    border: 1px solid #000000;
+    border-radius: 0 !important;
+    background-color: #2e2e38 !important;
+  }
+  
+  .title-style {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+  }
+  
+  .img-icon-style {
+    height: 100px;
+    width: 160px;
+  }
+  
+  .align-items-center {
+    display: flex;
+    align-items: center;
+  }
+  
+  .justify-content-center {
+    justify-content: center;
+  }
+  
+  /* align in the same line */
+  .container {
+    display: flex;
+    align-items: center;
+    padding: 0 !important;
+  }
+  
+  .forgot-password {
+    margin-left: auto;
+  }
+  
+  a {
+    text-decoration: none !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    color: #343232;
+  }
+  
+  a:hover {
+    text-decoration: underline #1B4D3E 2px !important;
+  }
+  
+  .form-floating {
+    position: relative;
+  }
+  
+  .ico {
+    position: absolute;
+    top: calc(30%);
+    left: 0.9rem;
+    font-size: 1.6rem;
+  }
+  
+  .form-floating label,
+  .form-floating .form-input {
+    left: 0.5rem;
+    padding-left: 1rem;
+  }
+
+  .select-style {
+    height: 25px !important;
+    min-height: 40px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    border-radius: 0 !important;
+  }
+  
+  /* space */
+  
+  .remove-padding {
+    padding: 0 !important;
+  }
+  
+  .space-vertically {
+    margin-top: 50px !important;
+  }
+  
+  .styled-reset{
+    border: none !important;
+    background-color: transparent !important;
+    color: #1B4D3E;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .styled-reset:hover{
+    border: none !important;
+    background-color: transparent !important;
+    color: #1B4D3E;
+    font-weight: 600;
+    text-decoration: underline 2px #018749;
+  }
+  
+  /* Ensure the container takes full height of the viewport */
+  .custom-style {
+    height: 100vh;
+  }
+  
+  .row {
+    height: 100%;
+  }
+  
+  .login-form-container {
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .form-group {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  
+  mat-form-field {
+    width: 100%;
+  }
+  
+  mat-error {
+    color: red; /* Ensure the error message is red */
+  }
+  
+  .img-style {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .login-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px; /* Optional: Adjust based on your design needs */
+  }
+  
+  
+  .style-register{
+    color: #5072A7;
+    text-decoration: none !important;
+    font-weight: 500;
+    font-size: 14px;
+  
+  }

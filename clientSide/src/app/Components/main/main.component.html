@@ -1,0 +1,16 @@
+  <ng-container class="app-header" *ngIf="currentRoute !== '/login' && currentRoute !== '/register'">
+    <app-header></app-header>
+  </ng-container>
+  
+  <ng-container *ngIf="currentRoute !== '/login' && currentRoute !== '/register'" class="container">
+    <app-layout></app-layout>
+  </ng-container>
+
+  <div class="content"  [ngClass]="{
+    'with-sidebar': isSidebarVisible && currentRoute !== '/login' && currentRoute !== '/register',
+    'without-sidebar': !isSidebarVisible && currentRoute !== '/login' && currentRoute !== '/register',
+    'full-screen': currentRoute === '/login' || currentRoute === '/register'
+  }">
+    <router-outlet></router-outlet>
+  </div>
+  

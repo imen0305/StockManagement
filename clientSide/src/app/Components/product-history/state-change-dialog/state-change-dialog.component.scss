@@ -1,0 +1,23 @@
+
+.modal {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .modal-open .modal {
+    opacity: 1;
+  }
+  
+  ::ng-deep .mat-dialog-container {
+    overflow: visible !important;
+  }
+  
+  ::ng-deep .mat-select-panel {
+    position: absolute !important;
+    top: auto !important;
+    left: auto !important;
+  }
+
+  mat-form-field{
+    margin-top: 10px !important;
+  }

@@ -1,0 +1,169 @@
+<div class="container-fluid custom-style">
+    <div class="d-flex flex-column justify-content-center">
+      <div class="px-5">
+        <div class="text-center">
+          <img
+            class="img-icon-style"
+            src="../../../assets/images/sag.png"
+          />
+          <h3 class="fw-normal mb-3 pb-3">Inscription</h3>
+        </div>
+      </div>
+      <div
+        class="d-flex align-items-center justify-content-center ms-xl-4 mt-2 pt-3 pt-xl-0 mt-xl-n5"
+      >
+        <div class="login-form-container">
+            <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                <div class="form-floating form-group mb-3">
+                  <i class="ico fa fa-user"></i>
+                  <input
+                    type="text"
+                    class="form-input"
+                    placeholder="Prénom"
+                    formControlName="firstname"
+                    required
+                  />
+                  <mat-error
+                    *ngIf="
+                      registerForm.get('firstname')?.invalid &&
+                      registerForm.get('firstname')?.touched
+                    "
+                  >
+                    <span *ngIf="registerForm.get('firstname')?.errors?.['required']"
+                      >Prénom obligatoire</span
+                    >
+                  </mat-error>
+                </div>
+      
+                <div class="form-floating form-group mb-3">
+                  <i class="ico fa fa-user"></i>
+                  <input
+                    type="text"
+                    class="form-input"
+                    placeholder="Nom"
+                    formControlName="lastname"
+                    required
+                  />
+                  <mat-error
+                    *ngIf="
+                      registerForm.get('lastname')?.invalid &&
+                      registerForm.get('lastname')?.touched
+                    "
+                  >
+                    <span *ngIf="registerForm.get('lastname')?.errors?.['required']"
+                      >Nom obligatoire</span
+                    >
+                  </mat-error>
+                </div>
+      
+                <div class="form-floating form-group mb-3">
+                  <i class="ico fa fa-envelope"></i>
+                  <input
+                    type="text"
+                    class="form-input"
+                    placeholder="Email"
+                    formControlName="email"
+                    required
+                  />
+                  <mat-error
+                    *ngIf="
+                      registerForm.get('email')?.invalid &&
+                      registerForm.get('email')?.touched
+                    "
+                  >
+                    <span *ngIf="registerForm.get('email')?.errors?.['required']"
+                      >Email obligatoire</span
+                    >
+                    <span *ngIf="registerForm.get('email')?.errors?.['email']"
+                      >Format d'email invalide</span
+                    >
+                  </mat-error>
+                </div>
+      
+                <div class="form-floating form-group mb-3">
+                  <i class="ico fa fa-lock"></i>
+                  <input
+                    type="password"
+                    class="form-input"
+                    placeholder="Mot de passe"
+                    formControlName="password"
+                    required
+                  />
+                  <mat-error
+                    *ngIf="
+                      registerForm.get('password')?.invalid &&
+                      registerForm.get('password')?.touched
+                    "
+                  >
+                    <span *ngIf="registerForm.get('password')?.errors?.['required']"
+                      >Mot de passe obligatoire</span
+                    >
+                  </mat-error>
+                </div>
+      
+                <div class="form-floating form-group mb-3">
+                  <i class="ico fa fa-id-card"></i>
+                  <input
+                    type="text"
+                    class="form-input"
+                    placeholder="Numéro fiscal"
+                    formControlName="taxNumber"
+                    required
+                  />
+                  <mat-error
+                    *ngIf="
+                      registerForm.get('taxNumber')?.invalid &&
+                      registerForm.get('taxNumber')?.touched
+                    "
+                  >
+                    <span *ngIf="registerForm.get('taxNumber')?.errors?.['required']"
+                      >Numéro fiscal obligatoire</span
+                    >
+                  </mat-error>
+                </div>
+      
+                <div class="form-floating form-group mb-3">
+                  <i class="ico fa fa-user-tag"></i>
+                  <select
+                    class="form-select select-style"
+                    formControlName="role"
+                    required
+                  >
+                  <option value="" disabled selected>Role</option>
+                    <option value="ADMIN">Administrateur</option>
+                  </select>
+                  <mat-error
+                    *ngIf="
+                      registerForm.get('role')?.invalid &&
+                      registerForm.get('role')?.touched
+                    "
+                  >
+                    <span *ngIf="registerForm.get('role')?.errors?.['required']"
+                      >Rôle obligatoire</span
+                    >
+                  </mat-error>
+                </div>
+      
+                <div class="my-3 text-center">
+                  <button
+                    class="btn btn-block button-style"
+                    [disabled]="registerForm.invalid"
+                    type="submit"
+                  >
+                  Inscrivez-vous
+                  </button>
+                </div>
+              </form>
+              <div class="text-center mt-3">
+                <span>Vous avez déjà un compte ?</span>
+                <a
+                  routerLink="/login"
+                  class="style-register"
+                >
+                Se Connecter</a
+                >
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
